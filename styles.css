@@ -1,0 +1,235 @@
+
+/* font-family: 'Dancing Script', cursive;
+   font-family: 'Roboto', sans-serif; */
+
+
+
+body {
+    
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    color: #4999af;
+}
+
+/* Header section */
+
+#header-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7ce1fc;
+}
+
+h1, ul, li {
+    display: inline-block;
+}
+
+.site-logo{
+    margin: 0;
+    color: white;
+    padding: 15px 0 15px 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-nav {
+   margin-right: 60px;
+   font-size: large;
+   
+}
+
+.nav-items li {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+    color: white;
+    font-weight:bold;
+    letter-spacing: 1.2px;   
+}
+
+/* Intro Section */
+
+#intro-container {
+    height: 30rem;
+}
+
+.profile-image {
+    width: 25%;
+    position: relative;
+    left: 120px;
+    top: 30px;
+}
+
+.intro-title {
+   display: inline-block;
+   position: relative;
+   bottom: 122px;
+   left: 175px;
+}
+
+.intro-title h3 {
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive ;
+}
+
+hr {
+    width: 15%;
+    margin: 0 auto;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+
+}
+
+/* Projects */
+
+#Main-section {
+    height: 350px;
+    margin: 0 auto;
+    background-color: #7ce1fc;
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+.content-title h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    color: white;
+    margin: 0;
+    padding: 2%;
+    letter-spacing: 1.2px;
+}
+
+.row {
+    width: 100%;
+}
+
+.col {
+    display: inline-block;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 2%;
+    margin: 2px;
+}
+
+.col p {
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    padding: 10px;
+}
+
+/* About-section */
+
+#about-section {
+    padding: 15px;
+    text-align: center;
+    height: 250px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+footer {
+    font-family:'Roboto', sans-serif;
+    background-color:#7ce1fc;
+    padding: 3%;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 376px) {
+
+    #header-section{
+        height: 93px;
+    }
+
+    /* nav section */
+    .site-logo {
+        display: block;
+        margin: 0 auto;
+        padding: 30px;
+        
+    }
+
+    .main-nav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+
+    }
+
+    .nav-items {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .nav-items a {
+        color: #7ce1fc;
+    }
+
+    #intro-container {
+        height: 370px;
+        top: 78px;
+        left: 123px;
+    }
+
+    .profile-image {
+        width: 35%;
+        position: relative;
+        top: 67px;
+    }
+
+    .intro-title h3 {
+        position: relative;
+        top: 209px;
+        left: -123px;
+        font-size: 2.2rem;
+
+    }
+
+    hr {
+        display: none;
+    }
+
+    #Main-section {
+        height: 100%;
+        padding: 3%;
+    }
+
+    .col {
+        display: block;
+        width: 80%;
+        margin: 15px auto;
+        
+    }
+
+    footer {
+       font-family: 'Roboto', sans-serif;
+       height: 77px;
+    }
+}
